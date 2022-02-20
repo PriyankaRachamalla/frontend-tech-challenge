@@ -1,0 +1,21 @@
+@import "../../font.scss";
+
+.digitalClock {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+
+  div {
+    max-width: 200px;
+    min-width: 150px;
+    width: fit-content;
+    padding: 8px 16px;
+    color: #fff;
+    font-family: digital-7;
+    background: #000;
+
+    span {
+      font-size: 48px;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.analogClock {
+  position: relative;
+  margin: 50px auto;
+  padding: 2rem;
+  width: 200px;
+  height: 200px;
+  box-shadow: -20px 20px 20px 10px #aaa;
+  border-radius: 50%;
+  background: linear-gradient(0deg, #ccc 35%, #000 0%);
+
+  .hand {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    width: 50%;
+    height: 6px;
+    background: #fff;
+    transform-origin: 100%;
+
+    &.hourHand {
+      z-index: 3;
+      width: 20%;
+    }
+
+    &.minuteHand {
+      z-index: 10;
+      width: 35%;
+      height: 3px;
+    }
+
+    &.secondHand {
+      width: 45%;
+      height: 2px;
+    }
+  }
+}
